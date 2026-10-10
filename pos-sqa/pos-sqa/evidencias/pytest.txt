@@ -1,0 +1,16 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.16, pytest-9.1.1, pluggy-1.6.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/claude/pos-sqa
+plugins: anyio-4.15.1
+collecting ... collected 7 items
+
+tests/test_cli07.py::test_CLI07_bodega_no_ve_datos_personales_y_se_registra PASSED [ 14%]
+tests/test_cli07.py::test_roles_segun_anexo_c PASSED                     [ 28%]
+tests/test_fac.py::test_FAC02_gravados_y_exentos PASSED                  [ 42%]
+tests/test_fac.py::test_FAC03_redondeo_por_linea PASSED                  [ 57%]
+tests/test_fac.py::test_redondeo_mitad_sube PASSED                       [ 71%]
+tests/test_respaldo.py::test_restauracion_conserva_ventas PASSED         [ 85%]
+tests/test_respaldo.py::test_retencion_30 PASSED                         [100%]
+
+============================== 7 passed in 0.04s ===============================
