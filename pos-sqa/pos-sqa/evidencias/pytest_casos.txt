@@ -1,0 +1,39 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.16, pytest-8.4.2, pluggy-1.6.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /content/pos-sqa
+plugins: langsmith-0.14.2, typeguard-4.6.0, anyio-4.15.1, platformdirs-4.12.2
+collecting ... collected 30 items
+
+tests/test_casos_sqa.py::test_INV_01_crear_producto_valido PASSED        [  3%]
+tests/test_casos_sqa.py::test_INV_02_codigo_duplicado PASSED             [  6%]
+tests/test_casos_sqa.py::test_INV_03_precio_negativo_o_stock_no_numerico PASSED [ 10%]
+tests/test_casos_sqa.py::test_INV_04_ajuste_con_movimiento PASSED        [ 13%]
+tests/test_casos_sqa.py::test_INV_05_alerta_stock_minimo PASSED          [ 16%]
+tests/test_casos_sqa.py::test_INV_06_baja_logica_conserva_historial PASSED [ 20%]
+tests/test_casos_sqa.py::test_INV_07_busqueda_menos_de_2s PASSED         [ 23%]
+tests/test_casos_sqa.py::test_VEN_01_venta_simple_descuenta_stock PASSED [ 26%]
+tests/test_casos_sqa.py::test_VEN_02_varios_items_suma_exacta PASSED     [ 30%]
+tests/test_casos_sqa.py::test_VEN_03_no_vender_mas_que_stock PASSED      [ 33%]
+tests/test_casos_sqa.py::test_VEN_04_descuentos PASSED                   [ 36%]
+tests/test_casos_sqa.py::test_VEN_05_anulacion_restituye_stock_y_audita PASSED [ 40%]
+tests/test_casos_sqa.py::test_VEN_06_medios_de_pago PASSED               [ 43%]
+tests/test_casos_sqa.py::test_VEN_07_falla_a_mitad_no_deja_datos_inconsistentes PASSED [ 46%]
+tests/test_casos_sqa.py::test_VEN_08_dos_cajeros_ultima_unidad PASSED    [ 50%]
+tests/test_casos_sqa.py::test_CLI_01_cliente_valido PASSED               [ 53%]
+tests/test_casos_sqa.py::test_CLI_02_identificacion_invalida_o_duplicada PASSED [ 56%]
+tests/test_casos_sqa.py::test_CLI_03_correo_o_telefono_invalido PASSED   [ 60%]
+tests/test_casos_sqa.py::test_CLI_04_editar_cliente_mantiene_historial PASSED [ 63%]
+tests/test_casos_sqa.py::test_CLI_05_consumidor_final PASSED             [ 66%]
+tests/test_casos_sqa.py::test_CLI_06_historial_completo PASSED           [ 70%]
+tests/test_casos_sqa.py::test_FAC_01_factura_simple PASSED               [ 73%]
+tests/test_casos_sqa.py::test_FAC_04_numeracion_secuencial_con_anulaciones PASSED [ 76%]
+tests/test_casos_sqa.py::test_FAC_05_anular_no_elimina PASSED            [ 80%]
+tests/test_casos_sqa.py::test_FAC_06_reimpresion_identica PASSED         [ 83%]
+tests/test_casos_sqa.py::test_FAC_07_datos_de_cliente_incompletos PASSED [ 86%]
+tests/test_casos_sqa.py::test_FAC_08_conciliacion_del_dia PASSED         [ 90%]
+tests/test_casos_sqa.py::test_INT_01_venta_stock_factura_coherentes PASSED [ 93%]
+tests/test_casos_sqa.py::test_INT_02_anular_revierte_stock_y_factura PASSED [ 96%]
+tests/test_casos_sqa.py::test_INT_03_cierre_de_caja_cuadra PASSED        [100%]
+
+============================== 30 passed in 3.75s ==============================
